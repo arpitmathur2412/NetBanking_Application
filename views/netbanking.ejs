@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="netbanking.css">
+    <title>Net Banking</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="/netbanking" method="post">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">FROM</h3>
+
+                    <div class="inputBox">
+                        <span>Full Name :</span>
+                        <input type="text" placeholder="Name" autocomplete="off" name="sname" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Account Number:</span>
+                        <input type="number" placeholder="XXXX-XXXX-XX" autocomplete="off" name="s_acc" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Amount:</span>
+                        <input type="number" placeholder="Amount" autocomplete="off" name="amount" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Expiry :</span>
+                            <input type="text" placeholder="MM/YY" autocomplete="off" name="expiry" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="CVV" autocomplete="off" name="cvv" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3 class="title">TO</h3>
+                    <div class="inputBox">
+                        <span>Full Name :</span>    
+                        <input type="text" placeholder="Name" autocomplete="off" name="rname" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Account Number:</span>
+                        <input type="number" placeholder="XXXX-XXXX-XX" autocomplete="off" name="r_acc" required>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="proceed to checkout" class="submit-btn">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

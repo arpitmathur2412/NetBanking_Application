@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js">
+</head>
+
+<body>
+    <div class="particles-js">
+        <div id="wrapper">
+            <div class="wrapper login">
+                <div class="container">
+                    <div class="col-left">
+                        <div class="login-text">
+                            <h2>ZENITH BANK</h2>
+                            <p>already have an account?<br></p>
+                            <div class="login-text">
+                            <form action="/login2" method="post">
+                                <input class="btn-login" type="submit" value="Log In"></input>
+                            </form>
+                        </div>
+                                  
+                        </div>
+                    </div>
+        
+                    <div  class="col-right">
+                        <div class="login-form">
+                            <h2>Sign up</h2>
+                            <form action="/" method="post">
+                                <p>
+                                    <label>First Name<span>*</span></label>
+                                    <input type="text" placeholder="First Name" name="Fname" required autofocus>
+                                </p>
+                                <p>
+                                    <label>Email<span>*</span></label>
+                                    <input type="email" placeholder="Email" name="email" required>
+                                </p>
+                                <p>
+                                    <label>Password<span>*</span></label>
+                                    <input type="password" placeholder="Password" id="typepass" name="Pass" required>
+
+                                    <input type="checkbox" onclick="showpass()" style="height: 15px; width: 15px; display: inline; margin: 10px;"><strong>Show password</strong>
+                                </p>
+                                <p>
+                                    <input type="submit" value="Sign In">
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <canvas class="background"></canvas>
+    <script>
+        function showpass() {
+            var temp = document.getElementById("typepass");
+            if(temp.type === "password") {
+                temp.type = "text";
+            }
+            else {
+                temp.type = "password";
+            }
+        }
+    </script>
+    
+
+    <script src="/node_modules/particles.js/demo/js/app.js"></script>
+    <script src="/node_modules/particles.js"></script>
+    <script src="/particles.js-master/dist/particles.min.js"></script>
+    <script src="/particles.js-master/src/particles.js"></script>
+    
+</body>
+
+</html>
