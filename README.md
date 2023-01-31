@@ -1,0 +1,2 @@
+# AUHACKS
+Main project files
